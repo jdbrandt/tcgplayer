@@ -17,12 +17,42 @@ public class Player
         bench = new ArrayList<Pokemon>();
     }
     
-    
-    
-    public void setDeck(ArrayList<Card> d)
+    public ArrayList<Card> getDeck()
     {
-        deck = d;
+        return deck;
     }
+    
+    public ArrayList<Card> getPrizes()
+    {
+        return prizes;
+    }
+    
+    public ArrayList<Card> getHand()
+    {
+        return hand;
+    }
+    
+    public ArrayList<Pokemon> getBench()
+    {
+        return bench;
+    }
+    
+    public Pokemon getActive()
+    {
+        return active;
+    }
+    
+    public void setDeck(ArrayList<Card> cards)
+    {
+        deck = cards;
+    }
+    
+    public void setPrizes(ArrayList<Card> cards)
+    {
+        prizes = cards;
+    }
+    
+
 
     
     /**
@@ -48,10 +78,7 @@ public class Player
     }
         
 
-    public ArrayList<Card> getDeck()
-    {
-        return deck;
-    }
+
     
     public void draw()
     {
@@ -89,6 +116,9 @@ public class Player
         }
         return false;
     }
+    
+    
+    
     
     /**
      * PERSONALLY IMPLEMENT THIS METHOD!!!
