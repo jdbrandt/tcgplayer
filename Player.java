@@ -52,6 +52,21 @@ public class Player
         prizes = cards;
     }
     
+    public void setHand(ArrayList<Card> cards)
+    {
+        hand = cards;
+    }
+    
+    public void setBench(ArrayList<Pokemon> cards)
+    {
+        bench = cards;
+    }
+    
+    public void setActive(Pokemon mon)
+    {
+        active = mon;
+    }
+    
 
 
     
@@ -85,7 +100,10 @@ public class Player
         hand.add(deck.get(0));
         deck.remove(0);
     }
-    
+    /**
+     * 
+     NEED TO IMPLEMENT
+     */
     public void shuffle()
     {
         
