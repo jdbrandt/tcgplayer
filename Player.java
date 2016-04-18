@@ -27,6 +27,11 @@ public class Player
         return prizes;
     }
     
+    public ArrayList<Card> getDiscard()
+    {
+        return discard;
+    }
+    
     public ArrayList<Card> getHand()
     {
         return hand;
@@ -50,6 +55,11 @@ public class Player
     public void setPrizes(ArrayList<Card> cards)
     {
         prizes = cards;
+    }
+    
+    public void setDiscard(ArrayList<Card> cards)
+    {
+        discard = cards;
     }
     
     public void setHand(ArrayList<Card> cards)
