@@ -1,5 +1,5 @@
 import java.util.*;
-public class Player
+public abstract class Player
 {
     ArrayList<Card> deck;
     ArrayList<Card> prizes;
@@ -148,30 +148,21 @@ public class Player
     
     
     
-    /**
-     * PERSONALLY IMPLEMENT THIS METHOD!!!
-     */
-    public void chooseActivePokemonSetup()
-    {
-        
-    }
+
+    public abstract void chooseActivePokemonSetup();
+
+    public abstract void chooseBenchedPokemonSetup();
+
+    public abstract void doTurn();
     
-    /**
-     * PERSONALLY IMPLEMENT THIS METHOD!!!
-     */
-    public void chooseBenchedPokemonSetup()
-    {
-        
-    }
+    public abstract void dropDamageCounter(Game g);
+
+    public abstract void dropNDamageCounters(Game g, int n);
+
     
-    /**
-     * PERSONALLY IMPLEMENT THIS METHOD!!!
-     */
-    public void doTurn()
-    {
-        
-    }
-        
+
+    public abstract Energy chooseEnergyToDiscardFromActive(Game g);
+
 }
     
     
