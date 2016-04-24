@@ -145,6 +145,72 @@ public abstract class Player
         return false;
     }
     
+    public void movePokemonAndAttachedToHand(Game g, Pokemon p)
+    {
+        for (int i = 0; i < p.getAttachedPokemon().size(); i++)
+        {
+            hand.add(p.getAttachedPokemon().remove(i));
+        }
+        
+        for (int i = 0; i < p.getAttachedTools().size(); i++)
+        {
+            hand.add(p.getAttachedTools().remove(i));
+        }
+        
+        for (int i = 0; i < p.getAttachedEnergy().size(); i++)
+        {
+            hand.add(p.getAttachedEnergy().remove(i));
+        }
+        
+        
+        hand.add(p);
+        
+        if (p.equals(active))
+        {
+            active = null;
+            replaceActivePokemon(g);
+        }
+        
+        else 
+        {
+            bench.remove(p);
+        }
+        
+    }
+    
+    public void movePokemonToHandDiscardAttached(Game g, Pokemon p)
+    {
+        for (int i = 0; i < p.getAttachedPokemon().size(); i++)
+        {
+            discard.add(p.getAttachedPokemon().remove(i));
+        }
+        
+        for (int i = 0; i < p.getAttachedTools().size(); i++)
+        {
+            discard.add(p.getAttachedTools().remove(i));
+        }
+        
+        for (int i = 0; i < p.getAttachedEnergy().size(); i++)
+        {
+            discard.add(p.getAttachedEnergy().remove(i));
+        }
+        
+        hand.add(p);
+        
+        if (p.equals(active))
+        {
+            active = null;
+            replaceActivePokemon(g);
+        }
+        
+        else
+        {
+            bench.remove(p);
+        }
+        
+        
+    }
+    
     
     
     
@@ -158,8 +224,10 @@ public abstract class Player
     public abstract void dropDamageCounter(Game g);
 
     public abstract void dropNDamageCounters(Game g, int n);
-
     
+    public abstract void replaceActivePokemon(Game g);
+    
+    public abstract Pokemon choosePokemonToAZ(Game g);
 
     public abstract Energy chooseEnergyToDiscardFromActive(Game g);
 
