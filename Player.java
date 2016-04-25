@@ -211,7 +211,16 @@ public abstract class Player
         
     }
     
-    
+    public void shuffleHandIntoDeck()
+    {
+        for (int i = 0; i < hand.size(); i++)
+        {
+            deck.add(hand.remove(i));
+        }
+        
+        shuffle();
+        
+    }
     
     
 
