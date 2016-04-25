@@ -237,6 +237,8 @@ public abstract class Player
     public abstract void replaceActivePokemon(Game g);
     
     public abstract Pokemon choosePokemonToAZ(Game g);
+    
+    public abstract Pokemon choosePokemonToGust(Game g);
 
     public abstract Energy chooseEnergyToDiscardFromActive(Game g);
 
