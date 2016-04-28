@@ -147,19 +147,19 @@ public abstract class Player
     
     public void movePokemonAndAttachedToHand(Game g, Pokemon p)
     {
-        for (int i = 0; i < p.getAttachedPokemon().size(); i++)
+        for (int i = 0; i < p.getPokemon().size(); i++)
         {
-            hand.add(p.getAttachedPokemon().remove(i));
+            hand.add(p.getPokemon().remove(i));
         }
         
-        for (int i = 0; i < p.getAttachedTools().size(); i++)
+        for (int i = 0; i < p.getTools().size(); i++)
         {
-            hand.add(p.getAttachedTools().remove(i));
+            hand.add(p.getTools().remove(i));
         }
         
-        for (int i = 0; i < p.getAttachedEnergy().size(); i++)
+        for (int i = 0; i < p.getEnergy().size(); i++)
         {
-            hand.add(p.getAttachedEnergy().remove(i));
+            hand.add(p.getEnergy().remove(i));
         }
         
         
@@ -180,19 +180,19 @@ public abstract class Player
     
     public void movePokemonToHandDiscardAttached(Game g, Pokemon p)
     {
-        for (int i = 0; i < p.getAttachedPokemon().size(); i++)
+        for (int i = 0; i < p.getPokemon().size(); i++)
         {
-            discard.add(p.getAttachedPokemon().remove(i));
+            discard.add(p.getPokemon().remove(i));
         }
         
-        for (int i = 0; i < p.getAttachedTools().size(); i++)
+        for (int i = 0; i < p.getTools().size(); i++)
         {
-            discard.add(p.getAttachedTools().remove(i));
+            discard.add(p.getTools().remove(i));
         }
         
-        for (int i = 0; i < p.getAttachedEnergy().size(); i++)
+        for (int i = 0; i < p.getEnergy().size(); i++)
         {
-            discard.add(p.getAttachedEnergy().remove(i));
+            discard.add(p.getEnergy().remove(i));
         }
         
         hand.add(p);
@@ -236,15 +236,29 @@ public abstract class Player
     
     public abstract void replaceActivePokemon(Game g);
     
+    /**
+     * @post: Pokemon was on your Bench or in Active
+     */
     public abstract Pokemon choosePokemonToAZ(Game g);
     
+    /**
+     * @post: Pokemon was on Opponent's bench
+     */
     public abstract Pokemon choosePokemonToGust(Game g);
     
+    /**
+     * @post: All cards were in deck, only two cards in array
+     */
     public abstract Card[] chooseAnyTwoCardsFromDeck(Game g);
     
-    public abstract Card chooseToolOrSpecialEnergyToDiscard(Game g);
+    /**
+     * @post: First card is a Pokemon, second is a Tool or Special Energy attached to that Pokemon
+     */
+    public abstract Card[] chooseToolOrSpecialEnergyToDiscard(Game g);
 
     public abstract Energy chooseEnergyToDiscardFromActive(Game g);
+    
+    public abstract Card[] chooseCardsToDiscard(int num);
 
 }
     
