@@ -264,7 +264,7 @@ public abstract class Player
     /**
      * @post: Card[].length == num, all cards were in deck in that number
      */
-    public abstract Card[] chooseCardsToDiscard(int num);
+    public abstract Card[] chooseCardsToDiscardFromDeck(int num);
 
 }
     

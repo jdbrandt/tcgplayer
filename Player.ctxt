@@ -61,7 +61,7 @@ comment32.params=g
 comment32.target=Energy\ chooseEnergyToDiscardFromActive(Game)
 comment32.text=\n\ @post\:\ Card\ was\ attached\ to\ Active\n
 comment33.params=num
-comment33.target=Card[]\ chooseCardsToDiscard(int)
+comment33.target=Card[]\ chooseCardsToDiscardFromDeck(int)
 comment33.text=\n\ @post\:\ Card[].length\ \=\=\ num,\ all\ cards\ were\ in\ deck\ in\ that\ number\n
 comment4.params=
 comment4.target=java.util.ArrayList\ getHand()
