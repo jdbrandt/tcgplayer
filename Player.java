@@ -255,9 +255,15 @@ public abstract class Player
      * @post: First card is a Pokemon, second is a Tool or Special Energy attached to that Pokemon
      */
     public abstract Card[] chooseToolOrSpecialEnergyToDiscard(Game g);
-
+    
+    /**
+     * @post: Card was attached to Active
+     */
     public abstract Energy chooseEnergyToDiscardFromActive(Game g);
     
+    /**
+     * @post: Card[].length == num, all cards were in deck in that number
+     */
     public abstract Card[] chooseCardsToDiscard(int num);
 
 }
