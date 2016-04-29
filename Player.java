@@ -264,7 +264,12 @@ public abstract class Player
     /**
      * @post: Card[].length == num, all cards were in deck in that number
      */
-    public abstract Card[] chooseCardsToDiscardFromDeck(int num);
+    public abstract Card[] chooseCardsToDiscardFromDeck(Game g, int num);
+    
+    /**
+     * 
+     */
+    public abstract boolean shouldPlayTwoPuzzle(Game g);
 
 }
     
