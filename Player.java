@@ -270,6 +270,13 @@ public abstract class Player
      * 
      */
     public abstract boolean shouldPlayTwoPuzzle(Game g);
+    
+    /**
+     * @post: Both cards were in discard, so long as there is no infinite comboing
+     */
+    public abstract Card[] chooseCardsToRetrieveFromDiscard(Game g, int num);
+    
+    public abstract Card[] sortTopCardsOfDeck(Game g, ArrayList<Card> cards);
 
 }
     
