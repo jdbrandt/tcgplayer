@@ -8,6 +8,9 @@ public abstract class Player
     ArrayList<Pokemon> bench;
     Pokemon active;
     
+    boolean canKnowPrizes;
+    boolean canKnowDeck;
+    
     public Player()
     {
         deck = new ArrayList<Card>();
@@ -77,7 +80,27 @@ public abstract class Player
         active = mon;
     }
     
-
+    public void setCanKnowPrizes(boolean bool)
+    {
+        canKnowPrizes = bool;
+    }
+    
+    public void setCanKnowDeck(boolean bool)
+    {
+        canKnowDeck = bool;
+    }
+    
+    public boolean getCanKnowPrizes()
+    {
+        return canKnowPrizes;
+    }
+    
+    public boolean getCanKnowDeck()
+    {
+        return canKnowDeck;
+    }
+    
+    
 
     
     /**
