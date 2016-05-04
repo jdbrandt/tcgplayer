@@ -54,6 +54,7 @@ comment30.target=void\ dropNDamageCounters(Game,\ int)
 comment31.params=g
 comment31.target=void\ replaceActivePokemon(Game)
 comment32.params=g
+<<<<<<< HEAD
 comment32.target=Pokemon\ choosePokemonToAZ(Game)
 comment32.text=\r\n\ @post\:\ Pokemon\ was\ on\ your\ Bench\ or\ in\ Active\r\n
 comment33.params=g
@@ -71,6 +72,21 @@ comment36.text=\r\n\ @post\:\ Card\ was\ attached\ to\ Active\r\n
 comment37.params=num
 comment37.target=Card[]\ chooseCardsToDiscardFromDeck(int)
 comment37.text=\r\n\ @post\:\ Card[].length\ \=\=\ num,\ all\ cards\ were\ in\ deck\ in\ that\ number\r\n
+=======
+comment32.target=Energy\ chooseEnergyToDiscardFromActive(Game)
+comment32.text=\n\ @post\:\ Card\ was\ attached\ to\ Active\n
+comment33.params=g\ num
+comment33.target=Card[]\ chooseCardsToDiscardFromDeck(Game,\ int)
+comment33.text=\n\ @post\:\ Card[].length\ \=\=\ num,\ all\ cards\ were\ in\ deck\ in\ that\ number\n
+comment34.params=g
+comment34.target=boolean\ shouldPlayTwoPuzzle(Game)
+comment34.text=\n\ \n
+comment35.params=g\ num
+comment35.target=Card[]\ chooseCardsToRetrieveFromDiscard(Game,\ int)
+comment35.text=\n\ @post\:\ Both\ cards\ were\ in\ discard,\ so\ long\ as\ there\ is\ no\ infinite\ comboing\n
+comment36.params=g\ cards
+comment36.target=Card[]\ sortTopCardsOfDeck(Game,\ java.util.ArrayList)
+>>>>>>> origin/master
 comment4.params=
 comment4.target=java.util.ArrayList\ getHand()
 comment5.params=
@@ -83,4 +99,8 @@ comment8.params=cards
 comment8.target=void\ setPrizes(java.util.ArrayList)
 comment9.params=cards
 comment9.target=void\ setDiscard(java.util.ArrayList)
+<<<<<<< HEAD
 numComments=38
+=======
+numComments=37
+>>>>>>> origin/master
