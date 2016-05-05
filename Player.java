@@ -304,6 +304,17 @@ public abstract class Player
     public abstract void viewCardsFromDeck(ArrayList<Card> cards);
     
     public abstract Trainer chooseTrainerFromCards(Game g, ArrayList<Card> cards);
+    
+    /**
+     * @return: All items in Card[] were in player.hand, Card[].length => 2.
+     */
+    public abstract Card[] getCardsToUltraBallAway(Game g);
+    
+    /**
+     * @return Pokemon was in deck. 
+     */
+    public abstract Pokemon getPokemonFromDeck(Game g);
+    
 
 }
     
