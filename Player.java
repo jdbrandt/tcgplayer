@@ -315,6 +315,11 @@ public abstract class Player
      */
     public abstract Pokemon getPokemonFromDeck(Game g);
     
+    /**
+     * @return Supporter was in discard
+     */
+    public abstract Supporter cardToVSSeeker(Game g);
+    
 
 }
     
