@@ -1,0 +1,53 @@
+Class documentation
+<---- javadoc command: ---->
+C:\Program Files\Java\jdk1.8.0_45\bin\javadoc.exe
+-author
+-version
+-nodeprecated
+-package
+-noindex
+-notree
+-nohelp
+-nonavbar
+-source
+1.8
+-classpath
+C:\Program Files\BlueJ\lib\bluejcore.jar;C:\Program Files\BlueJ\lib\junit-4.8.2.jar;C:\Users\jdbrandt\Desktop\GitHub\tcgcardspec;C:\Users\jdbrandt\Desktop\GitHub\tcggame;C:\Users\jdbrandt\Desktop\GitHub\tcgplayer;C:\Program Files\BlueJ\lib\userlib\pi4j-core.jar;C:\Program Files\BlueJ\lib\userlib\pi4j-device.jar;C:\Program Files\BlueJ\lib\userlib\pi4j-gpio-extension.jar;C:\Program Files\BlueJ\lib\userlib\pi4j-service.jar;C:\Users\jdbrandt\Desktop\GitHub\tcgplayer
+-d
+C:\Users\jdbrandt\Desktop\GitHub\tcgplayer\doc
+-encoding
+windows-1252
+-charset
+windows-1252
+-docletpath
+C:\Program Files\BlueJ\lib\bjdoclet.jar
+-doclet
+bluej.doclet.doclets.formats.html.HtmlDoclet
+C:\Users\jdbrandt\Desktop\GitHub\tcgplayer\Player.java
+<---- end of javadoc command ---->
+Loading source file C:\Users\jdbrandt\Desktop\GitHub\tcgplayer\Player.java...
+Constructing Javadoc information...
+Standard Doclet version 1.8.0_45
+Building tree for all the packages and classes...
+Generating C:\Users\jdbrandt\Desktop\GitHub\tcgplayer\doc\Player.html...
+C:\Users\jdbrandt\Desktop\GitHub\tcgplayer\Player.java:321: warning - @return: is an unknown tag.
+C:\Users\jdbrandt\Desktop\GitHub\tcgplayer\Player.java:275: warning - @return: is an unknown tag.
+C:\Users\jdbrandt\Desktop\GitHub\tcgplayer\Player.java:290: warning - @return: is an unknown tag.
+C:\Users\jdbrandt\Desktop\GitHub\tcgplayer\Player.java:300: warning - @return: is an unknown tag.
+C:\Users\jdbrandt\Desktop\GitHub\tcgplayer\Player.java:325: warning - @return: is an unknown tag.
+C:\Users\jdbrandt\Desktop\GitHub\tcgplayer\Player.java:285: warning - @return: is an unknown tag.
+C:\Users\jdbrandt\Desktop\GitHub\tcgplayer\Player.java:265: warning - @return: is an unknown tag.
+C:\Users\jdbrandt\Desktop\GitHub\tcgplayer\Player.java:270: warning - @return: is an unknown tag.
+C:\Users\jdbrandt\Desktop\GitHub\tcgplayer\Player.java:280: warning - @return: is an unknown tag.
+C:\Users\jdbrandt\Desktop\GitHub\tcgplayer\Player.java:311: warning - @return: is an unknown tag.
+C:\Users\jdbrandt\Desktop\GitHub\tcgplayer\Player.java:316: warning - @return: is an unknown tag.
+Generating C:\Users\jdbrandt\Desktop\GitHub\tcgplayer\doc\package-frame.html...
+Generating C:\Users\jdbrandt\Desktop\GitHub\tcgplayer\doc\package-summary.html...
+Generating C:\Users\jdbrandt\Desktop\GitHub\tcgplayer\doc\constant-values.html...
+Building index for all the packages and classes...
+Building index for all classes...
+Generating C:\Users\jdbrandt\Desktop\GitHub\tcgplayer\doc\allclasses-frame.html...
+Generating C:\Users\jdbrandt\Desktop\GitHub\tcgplayer\doc\allclasses-noframe.html...
+Generating C:\Users\jdbrandt\Desktop\GitHub\tcgplayer\doc\index.html...
+Generating C:\Users\jdbrandt\Desktop\GitHub\tcgplayer\doc\stylesheet.css...
+11 warnings

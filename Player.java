@@ -260,32 +260,32 @@ public abstract class Player
     public abstract void replaceActivePokemon(Game g);
     
     /**
-     * @post: Pokemon was on your Bench or in Active
+     * @return: Pokemon was on your Bench or in Active
      */
     public abstract Pokemon choosePokemonToAZ(Game g);
     
     /**
-     * @post: Pokemon was on Opponent's bench
+     * @return: Pokemon was on Opponent's bench
      */
     public abstract Pokemon choosePokemonToGust(Game g);
     
     /**
-     * @post: All cards were in deck, only two cards in array
+     * @return: All cards were in deck, only two cards in array
      */
     public abstract Card[] chooseAnyTwoCardsFromDeck(Game g);
     
     /**
-     * @post: First card is a Pokemon, second is a Tool or Special Energy attached to that Pokemon
+     * @return: First card is a Pokemon, second is a Tool or Special Energy attached to that Pokemon
      */
     public abstract Card[] chooseToolOrSpecialEnergyToDiscard(Game g);
     
     /**
-     * @post: Card was attached to Active
+     * @return: Card was attached to Active
      */
     public abstract Energy chooseEnergyToDiscardFromActive(Game g);
     
     /**
-     * @post: Card[].length == num, all cards were in deck in that number
+     * @return: Card[].length == num, all cards were in deck in that number
      */
     public abstract Card[] chooseCardsToDiscardFromDeck(Game g, int num);
     
@@ -295,7 +295,7 @@ public abstract class Player
     public abstract boolean shouldPlayTwoPuzzle(Game g);
     
     /**
-     * @post: Both cards were in discard, so long as there is no infinite comboing
+     * @return: Both cards were in discard, so long as there is no infinite comboing
      */
     public abstract Card[] chooseCardsToRetrieveFromDiscard(Game g, int num);
     
@@ -311,15 +311,18 @@ public abstract class Player
     public abstract Card[] getCardsToUltraBallAway(Game g);
     
     /**
-     * @return Pokemon was in deck. 
+     * @return: Pokemon was in deck. 
      */
     public abstract Pokemon getPokemonFromDeck(Game g);
     
     /**
-     * @return Supporter was in discard
+     * @return: Supporter was in discard
      */
     public abstract Supporter cardToVSSeeker(Game g);
-    
+    /**
+     * @return: Card was in cards
+     */
+    public abstract Card chooseCardToGoToHandAcroBike(Game g, ArrayList<Card> cards);
 
 }
     
