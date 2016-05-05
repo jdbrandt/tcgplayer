@@ -300,6 +300,8 @@ public abstract class Player
     public abstract Card[] chooseCardsToRetrieveFromDiscard(Game g, int num);
     
     public abstract Card[] sortTopCardsOfDeck(Game g, ArrayList<Card> cards);
+    
+    public abstract void viewCardsFromDeck(ArrayList<Card> cards);
 
 }
     
