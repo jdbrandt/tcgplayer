@@ -302,6 +302,8 @@ public abstract class Player
     public abstract Card[] sortTopCardsOfDeck(Game g, ArrayList<Card> cards);
     
     public abstract void viewCardsFromDeck(ArrayList<Card> cards);
+    
+    public abstract Trainer chooseTrainerFromCards(Game g, ArrayList<Card> cards);
 
 }
     
