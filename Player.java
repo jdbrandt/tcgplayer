@@ -168,7 +168,7 @@ public abstract class Player
         return false;
     }
     
-    public void movePokemonAndAttachedToHand(Game g, Pokemon p)
+    public void scoopUp(Game g, Pokemon p)
     {
         for (int i = 0; i < p.getPokemon().size(); i++)
         {
@@ -201,7 +201,7 @@ public abstract class Player
         
     }
     
-    public void movePokemonToHandDiscardAttached(Game g, Pokemon p)
+    public void AZ(Game g, Pokemon p)
     {
         for (int i = 0; i < p.getPokemon().size(); i++)
         {
@@ -262,32 +262,32 @@ public abstract class Player
     /**
      * @return: Pokemon was on your Bench or in Active
      */
-    public abstract Pokemon choosePokemonToAZ(Game g);
+    public abstract Pokemon chooseToAZ(Game g);
     
     /**
      * @return: Pokemon was on Opponent's bench
      */
-    public abstract Pokemon choosePokemonToGust(Game g);
+    public abstract Pokemon chooseToGust(Game g);
     
     /**
      * @return: All cards were in deck, only two cards in array
      */
-    public abstract Card[] chooseAnyTwoCardsFromDeck(Game g);
+    public abstract Card[] chooseTeammates(Game g);
     
     /**
      * @return: First card is a Pokemon, second is a Tool or Special Energy attached to that Pokemon
      */
-    public abstract Card[] chooseToolOrSpecialEnergyToDiscard(Game g);
+    public abstract Card[] chooseXerosic(Game g);
     
     /**
      * @return: Card was attached to Active
      */
-    public abstract Energy chooseEnergyToDiscardFromActive(Game g);
+    public abstract Energy chooseTFG(Game g);
     
     /**
      * @return: Card[].length == num, all cards were in deck in that number
      */
-    public abstract Card[] chooseCardsToDiscardFromDeck(Game g, int num);
+    public abstract Card[] chooseBattleCompressor(Game g, int num);
     
     /**
      * 
@@ -297,23 +297,23 @@ public abstract class Player
     /**
      * @return: Both cards were in discard, so long as there is no infinite comboing
      */
-    public abstract Card[] chooseCardsToRetrieveFromDiscard(Game g, int num);
+    public abstract Card[] choosePuzzle(Game g, int num);
     
-    public abstract Card[] sortTopCardsOfDeck(Game g, ArrayList<Card> cards);
+    public abstract Card[] sortPokedex(Game g, ArrayList<Card> cards);
     
     public abstract void viewCardsFromDeck(ArrayList<Card> cards);
     
-    public abstract Trainer chooseTrainerFromCards(Game g, ArrayList<Card> cards);
+    public abstract Trainer chooseTrainersMail(Game g, ArrayList<Card> cards);
     
     /**
      * @return: All items in Card[] were in player.hand, Card[].length => 2.
      */
-    public abstract Card[] getCardsToUltraBallAway(Game g);
+    public abstract Card[] chooseUltraBallAway(Game g);
     
     /**
      * @return: Pokemon was in deck. 
      */
-    public abstract Pokemon getPokemonFromDeck(Game g);
+    public abstract Pokemon chooseUltraBall(Game g);
     
     /**
      * @return: Supporter was in discard
@@ -322,7 +322,7 @@ public abstract class Player
     /**
      * @return: Card was in cards
      */
-    public abstract Card chooseCardToGoToHandAcroBike(Game g, ArrayList<Card> cards);
+    public abstract Card chooseToHandAcroBike(Game g, ArrayList<Card> cards);
 
 }
     
