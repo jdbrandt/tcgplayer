@@ -262,7 +262,7 @@ public abstract class Player
     /**
      * @return: Pokemon was on your Bench or in Active
      */
-    public abstract Pokemon chooseToAZ(Game g);
+    public abstract Pokemon chooseAZ(Game g);
     
     /**
      * @return: Pokemon was on Opponent's bench
