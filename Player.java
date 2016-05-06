@@ -323,6 +323,11 @@ public abstract class Player
      * @return: Card was in cards
      */
     public abstract Card chooseToHandAcroBike(Game g, ArrayList<Card> cards);
+    
+    /**
+     * @return: Pokemon was in discard
+     */
+    public abstract Pokemon chooseBuddyBuddy(Game g);
 
 }
     
